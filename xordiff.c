@@ -206,9 +206,13 @@ int main(int argc, char *argv[])
 	fout.ft->ft_close(&fout);
 	if (argv[4])
 		fbiout.ft->ft_close(&fbiout);
-	if (f1.hash) printhash(f1.hash,"IN1",argv[1]);
-	if (f2.hash) printhash(f2.hash,"IN2",argv[2]);
-	if (fout.hash) printhash(fout.hash,"OUT",argv[3]);
-	if (argv[4] && fbiout.hash) printhash(fbiout.hash,"ODX",argv[3]);
+	if (f1.hash) 
+	  printhash(f1.hash,"IN1",argv[1]);
+	if (f2.hash)
+	  printhash(f2.hash,"IN2",argv[2]);
+	if (fout.hash)
+	  printhash(fout.hash,"OUT",argv[3]);
+	if (argv[4] && fbiout.hash)
+	  printhash(fbiout.hash,"ODX",argv[3]);
 	return 0;
 }
